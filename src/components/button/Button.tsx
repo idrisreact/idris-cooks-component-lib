@@ -1,9 +1,9 @@
 import React from "react";
 
 export interface MyComponentProps {
-  // Add your component props here
+  title: string;
 }
 
-export const MyComponent: React.FC<MyComponentProps> = (props) => {
-  return <h1>button</h1>;
+export const Button: React.FC<MyComponentProps> = ({ title }) => {
+  return <h1>{title}</h1>;
 };
