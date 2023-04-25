@@ -1,11 +1,15 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, { forwardRef } from 'react';
 
 export interface MyComponentProps
   extends React.HtmlHTMLAttributes<HTMLButtonElement> {
-  title: string;
+  children: React.ReactNode;
 }
-
-export const Button: React.FC<MyComponentProps> = (props) => {
-  const { title } = props;
-  return <button {...props}>{title}</button>;
-};
+type Ref = HTMLButtonElement;
+export const Button = forwardRef<Ref, MyComponentProps>((props, ref) => {
+  const { children } = props;
+  return (
+    <button ref={ref} type="button" {...props}>
+      {children}
+    </button>
+  );
+});

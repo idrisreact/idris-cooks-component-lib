@@ -10,6 +10,6 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    title: 'storybook component',
+    children: 'storybook component',
   },
 };
