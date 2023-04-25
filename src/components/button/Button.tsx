@@ -1,9 +1,11 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-export interface MyComponentProps {
+export interface MyComponentProps
+  extends React.HtmlHTMLAttributes<HTMLButtonElement> {
   title: string;
 }
 
-export const Button: React.FC<MyComponentProps> = ({ title }) => {
-  return <h1>{title}</h1>;
+export const Button: React.FC<MyComponentProps> = (props) => {
+  const { title } = props;
+  return <button {...props}>{title}</button>;
 };
