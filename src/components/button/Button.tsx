@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes } from 'react';
 
 export interface MyComponentProps
   extends React.HtmlHTMLAttributes<HTMLButtonElement> {
