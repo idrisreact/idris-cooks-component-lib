@@ -11,7 +11,7 @@ npm install
 #Development
 
 # Clone the repository
-git clone https://github.com/idris-cooks/component-library.git
+git clone https://github.com/idrisreact/idris-cooks-component-lib/tree/main
 
 # Install dependencies
 npm install
