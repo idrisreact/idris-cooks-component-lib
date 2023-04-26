@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), dts({ insertTypesEntry: true })],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/index.ts'),
+      entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'idvor-components',
       formats: ['es', 'umd'],
       fileName: (format) => `idvor-components.${format}.js`,
