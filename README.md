@@ -7,20 +7,19 @@ Welcome to the Idris Cooks Component Library! This is a library of reusable UI c
 To install the component library, you can use npm:
 npm install
 
-
 #Development
 
 # Clone the repository
+
 git clone https://github.com/idrisreact/idris-cooks-component-lib/tree/main
 
 # Install dependencies
+
 npm install
 
 # Start Storybook
+
 npm run storybook
-
-
-
 
 ## Usage
 
@@ -39,3 +38,4 @@ function MyComponent() {
 
 This Markdown file includes instructions for installation, usage, development, contributing, and licensing. It also includes a command to run Storybook using `npm run storybook`. You'll want to customize this file to match your specific library and its components.
 
+```
