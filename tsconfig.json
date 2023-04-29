@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom", "es2017"],
+    "module": "ESNext",
+    "declarationDir": "dist/types",
+    "lib": ["dom", "es2015", "es2016", "es2017"],
     "jsx": "react",
     "sourceMap": true,
     "declaration": true,
@@ -12,5 +13,5 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*", "src/components", "src/index.tsx"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
 }
