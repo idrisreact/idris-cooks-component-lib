@@ -1,10 +1,16 @@
 {
   "name": "idvor-components",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "library for idris cooks MPA",
+  "type": "module",
   "main": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "idris-coooks",
+    "component library"
   ],
   "repository": {
     "type": "git",
@@ -20,7 +26,6 @@
     "vite:build": "vite build",
     "rollup:build": "rollup -c"
   },
-  "keywords": [],
   "author": "Idris",
   "license": "ISC",
   "devDependencies": {
